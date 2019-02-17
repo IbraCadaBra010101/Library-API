@@ -1,0 +1,86 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <fieldset>
+
+        <div class="form-group">
+            <h1 class="book-store-title">Book store</h1><br><br>
+                <label for="key-area"><h1>Fetch a key</h1></label>
+                <label for="key-area"></label><textarea class="form-control" id="key-area"
+                                                        rows="1" placeholder="The key will help you save,update and delete your books!"></textarea>
+                <button type="button" id="get-key-btn" class="btn btn-primary">Fetch a key</button>
+        </div>
+
+
+
+        <div class="form-group">
+            <h1>Add</h1>
+            <label for="title-id">Title</label>
+            <textarea class="form-control" id="title-id" rows="1" placeholder="book title"></textarea>
+            <label>Author</label>
+            <label for="author-id"></label><textarea class="form-control" id="author-id" rows="1" placeholder="authors name.."></textarea>
+            <label>Key</label>
+            <label for="key-text-id"></label><textarea class="form-control" id="key-text-id" rows="1" placeholder="Click on the fetch button above to get a key"></textarea>
+            <button type="button" id="submit-book" class="btn btn-primary">Save book</button>
+        </div>
+
+
+
+        <div class="form-group">
+
+        <div id="confirm-book-saved" class="confirm-book-saved"></div>
+
+
+        <div class="form-group">
+            <h1>View</h1>
+            <label for="view-catalog-id"></label>
+            <label for="view-catalog-id"></label><textarea
+                                                           class="form-control" id="view-catalog-id"
+                                                           rows="1" placeholder="You will need a key to view your catalog and dont forget to add some books before!"></textarea>
+            <button type="button" id="listbooks-btn" class="btn btn-primary">View books</button>
+
+            <div id="title-output-id">
+            </div> <h1 id="output-on-deletion"></h1>
+
+        </div>
+
+        <div class="form-group">
+            <h1>Update&Delete!</h1>
+            <div class="form-group">
+                <label>Book id</label>
+                <label for="mod-book-id"></label><textarea class="form-control" id="mod-book-id" rows="1" placeholder="You will need the ID number of the book you'd like to delete/update..."></textarea></div>
+
+            <label>Key</label>
+            <label for="mod-book-key"></label><textarea class="form-control" id="mod-book-key" rows="1" placeholder="You will need you key to update or delete a book ..."></textarea>
+
+            <label for="title-id"> New title</label>
+            <label for="book-title-mod"></label><textarea class="form-control" id="book-title-mod" rows="1" placeholder="What will the updated book name be?"></textarea>   <label>New author</label>
+            <label for="mod-author-name"></label><textarea class="form-control" id="mod-author-name" rows="1" placeholder="Dont forget to also update the name of the author"></textarea>
+            <button type="button" id="update-book-btn" class="btn btn-primary">Update!</button>
+            <button type="button" id="deletebook-btn" class="btn btn-primary">Delete book</button>
+            <label for="confirm-book-modified"></label><h2 id="confirm-book-modified" class="confirm-book-saved-output" rows="1"></h2>
+
+        </div>
+            <div class="form-group">
+                <h1>Error handling</h1>
+                <textarea class="form-control" id="tries-output" rows="1" placeholder="Amount of requests made"></textarea>
+                <br>
+                <textarea class="form-control" id='error-output' rows="1" placeholder="Error log"></textarea>
+            </div>
+
+    </fieldset>
+</form>
+</body>
+
+<script src="fetch.js"></script>
+</html>

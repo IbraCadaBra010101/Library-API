@@ -1,0 +1,25 @@
+body{
+    background-color: yellow;
+    margin-bottom: 2em;
+    padding: 1em;
+
+}
+.book-store-title{
+    font-size:50px;
+    color: red;
+}
+.btn{
+    margin-top:.5em;
+    margin-bottom:.5em;
+    color: black;
+    background-color: white;
+}
+.btn:hover{
+    background-color: yellow;
+    color: red;
+}
+.output{
+    display: inline;
+    font-size: 22px;
+}
+
